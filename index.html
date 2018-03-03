@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script   	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  				crossorigin="anonymous"> </script>
+  	<script src= "assets/javascript/app.js"> </script>
+
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid" style="background-color:#FFFF80">
+  <div class="container">
+    <h1 class="display-4">90s Cartoon Trivia!!</h1>
+    <p class="lead">Let's go back and test your knowledge and memory of popular cartooon characters and shows from the 90s era!</p>
+    <div id="time-left">Let's Play</div>
+    <span id="countdown">Time Remaining:</span>
+    	<div style="display:none">
+    	<audio controls>
+    	<source src="assets/sounds/theme.mp3">
+    	<p>Your browser does not support audio playback, download the file:
+		<a href="assets/sounds/theme.mp3">MP3</a></audio>
+		</div>    
+</div>
+</div>
+
+<div class="container">
+	<form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+
+	<!--to create rows, columns for cards-->
+	<div class="row">
+		<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/rugrats2.jpg" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">Which of the following did not participate in the creation of the show "Rugrats"?</h4>
+				</div>
+				<div class="list-group">
+				<form>
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group1" value="wrong">Arlene Klasky</label>
+    			<label><input id="answer" type="radio" name="group1" value="wrong">Paul Germain</label>
+   				<label><input id="answer" type="radio" name="group1" value="correct">Craig Bartlett</label>
+    			<label><input id="answer" type="radio" name="group1" value="wrong">Gabor Caupo</label>
+    		</form>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+	<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/arthur.png" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">Marc Brown created Arthur,an eight-year-old aardvark who lives in the fictional town of Elwood City. What is Arthur's last name? </h4>
+				</div>
+				<div class="list-group">
+				<form>
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group2" value="correct">Read</label>
+    			<label><input id="answer" type="radio" name="group2" value="wrong">Jones</label>
+   				<label><input id="answer" type="radio" name="group2" value="wrong">Reed</label>
+    			<label><input id="answer" type="radio" name="group2" value="wrong">White</label>
+    	</form>
+  				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/pepperann.jpg" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">"Pepper Ann, Pepper Ann, much to cool for ___ grade"</h4>
+				</div>
+				<form>
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group3" value="wrong">5th</label>
+    			<label><input id="answer" type="radio" name="group3" value="correct">7th</label>
+   				<label><input id="answer" type="radio" name="group3" value="wrong">2nd</label>
+    			<label><input id="answer" type="radio" name="group3" value="wrong">8th</label>
+    	</form>
+  				</div>
+			</div>
+		</div>
+	<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/ninja.jpg" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">All of the following are names of Ninja Turtles except: </h4>
+				</div>
+				<form>
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group4" value="wrong">Donatello</label>
+    			<label><input id="answer" type="radio" name="group4" value="wrong">Raphael</label>
+   				<label><input id="answer" type="radio" name="group4" value="correct">Splinter</label>
+    			<label><input id="answer" type="radio" name="group4" value="wrong">Leonardo</label>
+    	</form>
+  				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/animaniacs.jpg" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">Who was the executive producer of long-running cartoon "Animaniacs"?</h4>
+				</div>
+				<div class="list-group">
+				<form>
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group5" value="wrong">Stephen J. Cannell</label>
+    			<label><input id="answer" type="radio" name="group5" value="correct">Steven Spielberg</label>
+   				<label><input id="answer" type="radio" name="group5" value="wrong">Bill Lawrence</label>
+    			<label><input id="answer" type="radio" name="group5" value="wrong">Gábor Csupó</label>
+    	</form>
+    </div>
+  				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/heyarnold.jpg" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">"Hey, Football Head!"</h4>
+				</div>
+				<div class="list-group">
+				<form>
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group6" value="wrong">Gerald</label>
+    			<label><input id="answer" type="radio" name="group6" value="correct">Helga</label>
+   				<label><input id="answer" type="radio" name="group6" value="wrong">Phoebe</label>
+    			<label><input id="answer" type="radio" name="group6" value="wrong">Harold</label>
+    	</form>
+    </div>
+  				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/magicschoolbus.jpg" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">The original Magic School Bus theme song was sang by which of the following artists?</h4>
+				</div>
+				<form>
+				<div class="list-group">
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group7" value="wrong">Lin Manuel Miranda</label>
+    			<label><input id="answer" type="radio" name="group7" value="wrong">Jason Paige</label>
+   				<label><input id="answer" type="radio" name="group7" value="correct">Little Richard</label>
+    			<label><input id="answer" type="radio" name="group7" value="wrong">Gary Portnoy</label>
+    	</form>
+    </div>
+  				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-3">
+			<div class="card">
+				<img src="assets/images/recess.jpg" class="card-img-top img-fluid">
+				<div class="card-block">
+					<h4 class="card-title">Little Rascals star Courtland Meade also voiced which character in "Recess"?</h4>
+				</div>
+				<form>
+				<div class="list-group">
+				<div class="radio">
+    			<label><input id="answer" type="radio" name="group8" value="wrong">T.J.</label>
+    			<label><input id="answer" type="radio" name="group8" value="wrong">Vince</label>
+   				<label><input id="answer" type="radio" name="group8" value="wrong">Mikey</label>
+    			<label><input id="answer" type="radio" name="group8" value="correct">Gus</label>
+    	</form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+</div>
+</form>
+</body>
+</html>
