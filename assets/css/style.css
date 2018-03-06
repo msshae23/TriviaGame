@@ -1,0 +1,29 @@
+body{
+	background-image:url("https://ih0.redbubble.net/image.52090870.9540/flat,1000x1000,075,f.u2.jpg");
+}
+
+#soundbar{
+	display:none;
+}
+
+#countdown{
+	font-size:100px;
+}
+
+#showGame{
+	max-height:650px;
+	overflow:hidden;
+}
+
+#showGame.open{
+	max-height:2000px;
+}
+
+#scoreboard{
+	max-height:1000px;
+	overflow:hidden;
+}
+
+#scorboard.open{
+	max-height:2200px;
+}
